@@ -1,0 +1,17 @@
+node_modules/
+artifacts/
+cache/
+dist/
+web/generated/
+.env
+.env.*
+!.env.example
+*.log
+coverage/
+.local-runtime/
+deployments/private/
+/docs/PROGRAM_STATUS.md
+/docs/FELLOWSHIP_DRAFT.md
+/START_HERE.ko.md
+/reports/*
+!/reports/verification.json
