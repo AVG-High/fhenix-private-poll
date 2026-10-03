@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-03T12:14:49.206Z",
+  "mode": "mock-local",
+  "localTestsPassed": true,
+  "testCount": 12,
+  "publicTestnetValidated": false,
+  "rewardCreditClaimed": false,
+  "nodeVersion": "v24.19.0",
+  "hashes": {
+    "contracts/PrivatePoll.sol": "fb7c9ed7c09d9fef25155e72bbb02aed90316225bc378dbeeddf9ee81492f2fa",
+    "test/PrivatePoll.test.ts": "0cd956123d8d611158140399cc0a22ff32bd71fb3fb6d25980cae4984cd1fcb2",
+    "package-lock.json": "aa7bb609631bd99cded80bd31f9f11d87f588d463539075d34d6a73f1f6f124e",
+    "web/main.ts": "5d0961b70339152738f559fad7bf5e3ea920321cace710d6bebec6b59289487c",
+    "vite.config.ts": "2fc21aa5f814e267a41b491068db08202a6acdd1afebccbd844c40083e3b87bb",
+    "scripts/serve.mjs": "229bfffc3c6eb1660c8852286cfe9bf96b32cfb49cdedb79b8aaacb5246fd1fc"
+  },
+  "checks": [
+    {
+      "label": "contract-tests",
+      "exitCode": 0,
+      "output": "✓ cofhe-hardhat-plugin :: mocks deployed\n\n\n\n  PrivatePoll (CoFHE local mocks)\n    √ requires a future immutable deadline and a quorum of at least three\n    √ allows only one encrypted ballot per address (170ms)\n    √ never authorizes a deployer, voter, or outsider to decrypt an intermediate tally (107ms)\n    √ prevents an early reveal even when quorum has already been reached (200ms)\n    √ rejects voting at the exact closing timestamp (60ms)\n    √ leaves a poll permanently sealed when its deadline passes without quorum (132ms)\n    √ publishes an authenticated mixed result only after closing (183ms)\n    √ publishes an authenticated all no result only after closing (220ms)\n    √ publishes an authenticated all yes result only after closing (201ms)\n    √ rejects malformed input proofs without consuming the voter's slot (71ms)\n    √ binds an encrypted input to its sender and consuming contract (84ms)\n    √ rejects forged, altered, and out-of-range published tallies (213ms)\n\n\n  12 passing (2s)\n\n"
+    },
+    {
+      "label": "tooling-types",
+      "exitCode": 0,
+      "output": ""
+    },
+    {
+      "label": "wallet-artifact",
+      "exitCode": 0,
+      "output": "Prepared local wallet console artifact. No network transaction was sent.\n"
+    },
+    {
+      "label": "wallet-types",
+      "exitCode": 0,
+      "output": ""
+    }
+  ]
+}
